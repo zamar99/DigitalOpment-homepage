@@ -22,7 +22,9 @@ export const Navigation = () => {
           </NavDropdown>
           <Nav.Link href='/'>Blog</Nav.Link>
           <Nav.Link href='/'>Career</Nav.Link>
-          <Nav.Link href='/'>Contact</Nav.Link>
+          <Nav.Link as={Link} to='/contact'>
+            Contact
+          </Nav.Link>
           <Nav.Link href='/'>Call: +1 (000) 000-0000</Nav.Link>
         </Nav>
       </Navbar.Collapse>
