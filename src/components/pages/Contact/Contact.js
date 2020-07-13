@@ -4,7 +4,6 @@ import { Spring } from 'react-spring/renderprops';
 import img1 from '../../../assets/img/mouse.png';
 import { Locations } from '../../layout/Locations';
 import ProjectForm from '../../layout/ProjectForm';
-import { Footer } from '../../layout/Footer';
 
 export default function Contact() {
   return (

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AnimateHeight from 'react-animate-height';
+import './footer.css';
 
 class Footer extends Component {
   state = {
@@ -50,7 +51,7 @@ class Footer extends Component {
               <div className='row'>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                   <div className='footer-col-1'>
-                    <ul style={{ marginTop: '20px' }}>
+                    <ul className='space_list' style={{ marginTop: '20px' }}>
                       <li>
                         <a href='#'>
                           <h2 className='font-weight-bold'>Services</h2>
@@ -97,7 +98,7 @@ class Footer extends Component {
                 </div>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                   <div className='footer-col-2'>
-                    <ul style={{ marginTop: '20px' }}>
+                    <ul className='space_list' style={{ marginTop: '20px' }}>
                       <li>
                         <a href='#'>
                           <h2 className='font-weight-bold'>Home</h2>
@@ -120,7 +121,7 @@ class Footer extends Component {
                 </div>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                   <div className='footer-col-3'>
-                    <ul style={{ marginTop: '20px' }}>
+                    <ul className='space_list' style={{ marginTop: '20px' }}>
                       <li>
                         <a href='#'>
                           <h2 className='font-weight-bold'>Quick Links</h2>

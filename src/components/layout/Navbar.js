@@ -21,7 +21,9 @@ export const Navigation = () => {
             <NavDropdown.Item href='/'>Services</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link href='/'>Blog</Nav.Link>
-          <Nav.Link href='/'>Career</Nav.Link>
+          <Nav.Link as={Link} to='/career'>
+            Career
+          </Nav.Link>
           <Nav.Link as={Link} to='/contact'>
             Contact
           </Nav.Link>

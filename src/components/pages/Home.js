@@ -12,6 +12,7 @@ import { Awards } from '../layout/Awards';
 import ProjectForm from '../layout/ProjectForm';
 import { Locations } from '../layout/Locations';
 import { Spring } from 'react-spring/renderprops';
+import { ProgressBar } from '../layout/ProgressBar';
 
 export default function Home() {
   return (
@@ -52,6 +53,16 @@ export default function Home() {
         {(props) => (
           <div style={props}>
             <ContactForm />
+          </div>
+        )}
+      </Spring>
+
+      <hr />
+
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 1000, duration: 1000 }}>
+        {(props) => (
+          <div style={props}>
+            <ProgressBar />
           </div>
         )}
       </Spring>

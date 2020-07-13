@@ -1,10 +1,13 @@
 import React from 'react';
 import { Card, Form, Button } from 'react-bootstrap';
+import img from '../../assets/img/13.png';
 
 export default function ProjectForm() {
   return (
-    <div className='container'>
-      <Card style={{ backgroundColor: '#d3d3d3' }}>
+    <div style={{ backgroundImage: `url(${img})` }}>
+      <Card
+        style={{ width: '80%', marginLeft: '10%', backgroundColor: 'transparent', color: 'white' }}
+      >
         <h1 style={{ textAlign: 'center', marginTop: '20px' }}>LET'S START YOUR PROJECT</h1>
         <hr />
         <Form style={{ marginRight: '10px', marginLeft: '10px' }}>

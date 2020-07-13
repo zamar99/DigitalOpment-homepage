@@ -7,6 +7,7 @@ import { Navigation } from './components/layout/Navbar';
 import Contact from './components/pages/Contact/Contact';
 import Footer from './components/layout/Footer';
 import img1 from './assets/img/Whitefooter.png';
+import Career from './components/pages/career/Career';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/about' exact component={About} />
           <Route path='/contact' exact component={Contact} />
+          <Route path='/career' exact component={Career} />
         </Switch>
         <div>
           <Footer />

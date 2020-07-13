@@ -15,8 +15,11 @@ export const Specialities = () => {
         <div className='row'>
           <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 animated bounceInLeft delay-2s'>
             <div className='sec-one-info'>
-              <h1 className='ml2' style={{ marginTop: '50px' }}>
-                OUR SPECIALITIES
+              <h1 className='ml2' style={{ marginTop: '50px', color: 'blue' }}>
+                <b>OUR</b>
+              </h1>
+              <h1 style={{ color: 'blue' }}>
+                <b>SPECIALITIES</b>
               </h1>
               <p>
                 We ensure that once we take a project on-board, we provide 360 degree solutions. As
