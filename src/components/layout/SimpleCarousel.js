@@ -6,7 +6,6 @@ import img4 from '../../assets/img/about/07-2.png';
 import img5 from '../../assets/img/about/05-2.png';
 import img6 from '../../assets/img/about/05-1.png';
 import img7 from '../../assets/img/about/06-2.png';
-import img8 from '../../assets/img/about/06-1.png';
 
 export default function SimpleCarousel() {
   const [activeItemIndex, setActiveItemIndex] = useState(0);

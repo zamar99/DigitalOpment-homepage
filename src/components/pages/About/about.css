@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
+  margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }

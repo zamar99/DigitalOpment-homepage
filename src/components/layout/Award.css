@@ -1,0 +1,13 @@
+.my-button {
+  background-color: #1f6da6 !important;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: 0.7s;
+}
+
+button:hover {
+  background-color: floralwhite !important;
+  color: black;
+}

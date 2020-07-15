@@ -1,36 +1,100 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Form, Col, Button } from 'react-bootstrap';
+import './css/myStyles.css';
 
 export default () => {
-  const [password, setPassword] = useState('');
-  const [passwordConfirm, setPasswordConfirm] = useState('');
-
   return (
-    <div>
-      <div className='row'>
-        <div className='six columns'>
-          <label>Password</label>
-          <input
-            className='u-full-width required'
-            placeholder='Password'
-            type='password'
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-            autoFocus
+    <Form>
+      <Form.Row>
+        <Form.Group as={Col} controlId='formGridPassword'>
+          <Form.Control
+            style={{
+              width: '80%',
+              backgroundColor: 'transparent',
+              border: '0px solid #ced4da',
+              borderBottom: '1px solid #fff',
+              padding: '30px',
+              fontSize: '1rem',
+              fontWeight: '400',
+              color: 'white',
+            }}
+            placeholder='First Name'
           />
-        </div>
-      </div>
-      <div className='row'>
-        <div className='six columns'>
-          <label>Confirm password</label>
-          <input
-            className='u-full-width'
-            placeholder='Confirm Password'
-            type='password'
-            onChange={(e) => setPasswordConfirm(e.target.value)}
-            value={passwordConfirm}
+        </Form.Group>
+
+        <Form.Group as={Col} controlId='formGridPassword'>
+          <Form.Control
+            style={{
+              width: '80%',
+              backgroundColor: 'transparent',
+              border: '0px solid #ced4da',
+              borderBottom: '1px solid #fff',
+              padding: '30px',
+              fontSize: '1rem',
+              fontWeight: '400',
+              color: 'white',
+            }}
+            placeholder='Last Name'
           />
-        </div>
+        </Form.Group>
+      </Form.Row>
+
+      <Form.Group controlId='formGridAddress1'>
+        <Form.Control
+          style={{
+            width: '90%',
+            backgroundColor: 'transparent',
+            border: '0px solid #ced4da',
+            borderBottom: '1px solid #fff',
+            padding: '30px',
+            fontSize: '1rem',
+            fontWeight: '400',
+            color: 'white',
+          }}
+          placeholder='Email'
+        />
+      </Form.Group>
+
+      <Form.Group controlId='formGridAddress2'>
+        <Form.Control
+          style={{
+            width: '90%',
+            backgroundColor: 'transparent',
+            border: '0px solid #ced4da',
+            borderBottom: '1px solid #fff',
+            padding: '30px',
+            fontSize: '1rem',
+            fontWeight: '400',
+            color: 'white',
+          }}
+          placeholder='Password'
+          type='password'
+        />
+      </Form.Group>
+
+      <Form.Group controlId='formGridAddress1'>
+        <Form.Control
+          style={{
+            width: '90%',
+            backgroundColor: 'transparent',
+            border: '0px solid #ced4da',
+            borderBottom: '1px solid #fff',
+            padding: '30px',
+            fontSize: '1rem',
+            fontWeight: '400',
+            color: 'white',
+          }}
+          placeholder='Phone Number'
+          type='number'
+        />
+      </Form.Group>
+      <br />
+      <div style={{ width: '90%' }}>
+        <Button className='btn-primary' size='sm' block>
+          Sign In
+        </Button>
       </div>
-    </div>
+      <br />
+    </Form>
   );
 };

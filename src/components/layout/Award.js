@@ -1,143 +1,121 @@
-import React from 'react';
-import { CardGroup, Card } from 'react-bootstrap';
-import awd from '../../assets/img/our-main-services.png';
+import React, { Component } from 'react';
+import { Row, Col } from 'react-bootstrap';
+import { BespokeDevelopment } from './BespokeDevelopment';
+import './Award.css';
+import { All } from './All';
+import { Magneto } from './Magneto';
+import { OpenCart } from './OpenCart';
+import { WooCommerce } from './WooCommerce';
+import { Spring } from 'react-spring/renderprops';
 
-export const Award = () => {
-  return (
-    <div className='container'>
-      <h2 style={{ textAlign: 'center' }}>AWARD WINNING PROJECTS</h2>
-      <br />
-      <CardGroup>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </CardGroup>
+class Award extends Component {
+  state = {
+    showAward: 'All',
+  };
 
-      <br />
+  render() {
+    const DisplayAward = this.state.showAward;
 
-      <CardGroup>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </CardGroup>
+    return (
+      <div className='container'>
+        <Row>
+          <Col>
+            <h3>
+              <strong>AWARD WINNING PROJECTS</strong>
+            </h3>
+          </Col>
+          <button
+            className='my-button'
+            onClick={() => {
+              this.setState({ showAward: 'All' });
+            }}
+          >
+            All
+          </button>
+          <button
+            className='my-button'
+            onClick={() => {
+              this.setState({ showAward: 'Bespoke' });
+            }}
+          >
+            BESPOKE-DEVELOPMENT
+          </button>
+          <button
+            className='my-button'
+            onClick={() => {
+              this.setState({ showAward: 'Magneto' });
+            }}
+          >
+            MAGNETO
+          </button>
+          <button
+            className='my-button'
+            onClick={() => {
+              this.setState({ showAward: 'OpenCart' });
+            }}
+          >
+            OPEN-CART
+          </button>
+          <button
+            className='my-button'
+            onClick={() => {
+              this.setState({ showAward: 'WooCommerce' });
+            }}
+          >
+            WOOCOMMERCE
+          </button>
+        </Row>
 
-      <br />
+        <br />
+        {DisplayAward === 'All' && (
+          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 200, duration: 200 }}>
+            {(props) => (
+              <div style={props}>
+                <All />
+              </div>
+            )}
+          </Spring>
+        )}
+        {DisplayAward === 'Bespoke' && (
+          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 200, duration: 200 }}>
+            {(props) => (
+              <div style={props}>
+                <BespokeDevelopment />
+              </div>
+            )}
+          </Spring>
+        )}
+        {DisplayAward === 'Magneto' && (
+          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 200, duration: 200 }}>
+            {(props) => (
+              <div style={props}>
+                <Magneto />
+              </div>
+            )}
+          </Spring>
+        )}
+        {DisplayAward === 'OpenCart' && (
+          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 200, duration: 200 }}>
+            {(props) => (
+              <div style={props}>
+                <OpenCart />
+              </div>
+            )}
+          </Spring>
+        )}
+        {DisplayAward === 'WooCommerce' && (
+          <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 200, duration: 200 }}>
+            {(props) => (
+              <div style={props}>
+                <WooCommerce />
+              </div>
+            )}
+          </Spring>
+        )}
+        <br />
+      </div>
+    );
+  }
+}
 
-      <CardGroup>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </CardGroup>
-
-      <br />
-
-      <CardGroup>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={awd} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </CardGroup>
-
-      <br />
-    </div>
-  );
-};
+export default Award;

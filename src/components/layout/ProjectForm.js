@@ -4,30 +4,33 @@ import img from '../../assets/img/13.png';
 
 export default function ProjectForm() {
   return (
-    <div style={{ backgroundImage: `url(${img})` }}>
+    <div style={{ backgroundImage: `url(${img})`, width: '100%' }}>
       <Card
-        style={{ width: '80%', marginLeft: '10%', backgroundColor: 'transparent', color: 'white' }}
+        style={{
+          width: '50%',
+          marginLeft: '25%',
+          backgroundColor: 'transparent',
+          color: 'white',
+        }}
       >
-        <h1 style={{ textAlign: 'center', marginTop: '20px' }}>LET'S START YOUR PROJECT</h1>
+        <h1 style={{ textAlign: 'center', marginTop: '40px', fontWeight: 'bold' }}>
+          LET'S START YOUR PROJECT
+        </h1>
         <hr />
-        <Form style={{ marginRight: '10px', marginLeft: '10px' }}>
+        <Form style={{ marginRight: '10px', marginLeft: '10px', marginBottom: '40px' }}>
           <Form.Group controlId='formBasicEmail'>
-            <Form.Label>Your Name</Form.Label>
-            <Form.Control type='text' placeholder='Enter Name' />
+            <Form.Control type='text' placeholder='Your Name' />
           </Form.Group>
 
           <Form.Group controlId='formBasicEmail'>
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type='email' placeholder='Enter email' />
+            <Form.Control type='email' placeholder='Email address' />
           </Form.Group>
 
           <Form.Group controlId='formBasicEmail'>
-            <Form.Label>Phone Number</Form.Label>
-            <Form.Control type='number' placeholder='Your Phone Number' />
+            <Form.Control type='number' placeholder='Phone Number' />
           </Form.Group>
 
           <Form.Group controlId='exampleForm.ControlSelect1'>
-            <Form.Label>Select Project Type</Form.Label>
             <Form.Control as='select'>
               <option>Select Project Type</option>
               <option>Project Type 1</option>
@@ -39,7 +42,6 @@ export default function ProjectForm() {
           </Form.Group>
 
           <Form.Group controlId='exampleForm.ControlSelect1'>
-            <Form.Label>Select Country</Form.Label>
             <Form.Control as='select'>
               <option Selected>SELECT COUNTRY</option>
               <option data-countryCode='GB' value='44'>
@@ -690,8 +692,7 @@ export default function ProjectForm() {
           </Form.Group>
 
           <Form.Group controlId='exampleForm.ControlTextarea1'>
-            <Form.Label>Your Message</Form.Label>
-            <Form.Control as='textarea' rows='3' />
+            <Form.Control as='textarea' rows='3' placeholder='Your Message' />
           </Form.Group>
 
           <Button variant='primary' style={{ width: '100%' }}>

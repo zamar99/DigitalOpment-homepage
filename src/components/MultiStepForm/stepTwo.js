@@ -1,46 +1,100 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
+import './css/myStyles.css';
 
 export default () => {
-  const [email, setEmail] = useState('');
-  const [emailConfirm, setEmailConfirm] = useState('');
-
   return (
     <Form>
       <Form.Row>
-        <Form.Group as={Col} controlId='formGridEmail'>
-          <Form.Control type='email' placeholder='Enter email' />
+        <Form.Group as={Col} controlId='formGridPassword'>
+          <Form.Control
+            style={{
+              width: '80%',
+              backgroundColor: 'transparent',
+              border: '0px solid #ced4da',
+              borderBottom: '1px solid #fff',
+              padding: '30px',
+              fontSize: '1rem',
+              fontWeight: '400',
+              color: 'white',
+            }}
+            placeholder='First Name'
+          />
         </Form.Group>
 
         <Form.Group as={Col} controlId='formGridPassword'>
-          <Form.Control type='password' placeholder='Password' />
+          <Form.Control
+            style={{
+              width: '80%',
+              backgroundColor: 'transparent',
+              border: '0px solid #ced4da',
+              borderBottom: '1px solid #fff',
+              padding: '30px',
+              fontSize: '1rem',
+              fontWeight: '400',
+              color: 'white',
+            }}
+            placeholder='Last Name'
+          />
         </Form.Group>
       </Form.Row>
 
       <Form.Group controlId='formGridAddress1'>
-        <Form.Control placeholder='Address' />
+        <Form.Control
+          style={{
+            width: '90%',
+            backgroundColor: 'transparent',
+            border: '0px solid #ced4da',
+            borderBottom: '1px solid #fff',
+            padding: '30px',
+            fontSize: '1rem',
+            fontWeight: '400',
+            color: 'white',
+          }}
+          placeholder='Email'
+        />
       </Form.Group>
 
       <Form.Group controlId='formGridAddress2'>
-        <Form.Control placeholder='Address 2' />
+        <Form.Control
+          style={{
+            width: '90%',
+            backgroundColor: 'transparent',
+            border: '0px solid #ced4da',
+            borderBottom: '1px solid #fff',
+            padding: '30px',
+            fontSize: '1rem',
+            fontWeight: '400',
+            color: 'white',
+          }}
+          placeholder='Password'
+          type='password'
+        />
       </Form.Group>
 
-      <Form.Row>
-        <Form.Group as={Col} controlId='formGridState'>
-          <Form.Control as='select' defaultValue='Choose...'>
-            <option>State</option>
-            <option>...</option>
-          </Form.Control>
-        </Form.Group>
-
-        <Form.Group as={Col} controlId='formGridZip'>
-          <Form.Control />
-        </Form.Group>
-      </Form.Row>
-
-      <Form.Group id='formGridCheckbox'>
-        <Form.Check type='checkbox' label='Check me out' />
+      <Form.Group controlId='formGridAddress1'>
+        <Form.Control
+          style={{
+            width: '90%',
+            backgroundColor: 'transparent',
+            border: '0px solid #ced4da',
+            borderBottom: '1px solid #fff',
+            padding: '30px',
+            fontSize: '1rem',
+            fontWeight: '400',
+            color: 'white',
+          }}
+          placeholder='Phone Number'
+          type='number'
+        />
       </Form.Group>
+      <br />
+      <div style={{ width: '90%' }}>
+        <Button className='btn-primary' size='sm' block>
+          Sign In
+        </Button>
+      </div>
+      <br />
     </Form>
   );
 };

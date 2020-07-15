@@ -1,18 +1,18 @@
 import React, { Fragment } from 'react';
-import vid from '../../assets/video/Introducing Digitalopment The leading Digital Marketing Agency.mp4';
 import Audience from '../layout/Audience';
 import Experience from '../layout/Experience';
 import { Specialities } from '../layout/Specialities';
 import { Solutions } from '../layout/Solutions';
 import { Sec3 } from '../layout/Sec3';
 import ContactForm from '../layout/ContactForm';
-import { Award } from '../layout/Award';
+import Award from '../layout/Award';
 import { Tech } from '../layout/Tech';
 import { Awards } from '../layout/Awards';
 import ProjectForm from '../layout/ProjectForm';
 import { Locations } from '../layout/Locations';
 import { Spring } from 'react-spring/renderprops';
 import { ProgressBar } from '../layout/ProgressBar';
+import vid from '../../assets/video/Introducing Digitalopment The leading Digital Marketing Agency.mp4';
 
 export default function Home() {
   return (

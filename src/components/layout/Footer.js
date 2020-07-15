@@ -53,45 +53,45 @@ class Footer extends Component {
                   <div className='footer-col-1'>
                     <ul className='space_list' style={{ marginTop: '20px' }}>
                       <li>
-                        <a href='#'>
+                        <a href='/'>
                           <h2 className='font-weight-bold'>Services</h2>
                         </a>
                       </li>
                       <li>
-                        <a href='#'>Web Development</a>
+                        <a href='/'>Web Development</a>
                       </li>
                       <li>
-                        <a href='#'>Mobile App Development</a>
+                        <a href='/'>Mobile App Development</a>
                       </li>
                       <li>
-                        <a href='#'>Software Development</a>
+                        <a href='/'>Software Development</a>
                       </li>
                       <li>
-                        <a href='#'>Managed Cloud Hosting</a>
+                        <a href='/'>Managed Cloud Hosting</a>
                       </li>
                       <li>
-                        <a href='#'>Startups</a>
+                        <a href='/'>Startups</a>
                       </li>
                       <li>
-                        <a href='#'>Digital Marketing</a>
+                        <a href='/'>Digital Marketing</a>
                       </li>
                       <li>
-                        <a href='#'>Business Process Outsourcing</a>
+                        <a href='/'>Business Process Outsourcing</a>
                       </li>
                       <li>
-                        <a href='#'>Business Intelligence</a>
+                        <a href='/'>Business Intelligence</a>
                       </li>
                       <li>
-                        <a href='#'>IT Management Services</a>
+                        <a href='/'>IT Management Services</a>
                       </li>
                       <li>
-                        <a href='#'>Social Media Management</a>
+                        <a href='/'>Social Media Management</a>
                       </li>
                       <li>
-                        <a href='#'>SEO Development</a>
+                        <a href='/'>SEO Development</a>
                       </li>
                       <li>
-                        <a href='#'>Content Writting</a>
+                        <a href='/'>Content Writting</a>
                       </li>
                     </ul>
                   </div>
@@ -100,21 +100,21 @@ class Footer extends Component {
                   <div className='footer-col-2'>
                     <ul className='space_list' style={{ marginTop: '20px' }}>
                       <li>
-                        <a href='#'>
+                        <a href='/'>
                           <h2 className='font-weight-bold'>Home</h2>
                         </a>
                       </li>
                       <li>
-                        <a href='#'>Carers</a>
+                        <a href='/'>Carers</a>
                       </li>
                       <li>
-                        <a href='#'>Blog</a>
+                        <a href='/'>Blog</a>
                       </li>
                       <li>
-                        <a href='#'>About Us</a>
+                        <a href='/'>About Us</a>
                       </li>
                       <li>
-                        <a href='#'>Contact Us</a>
+                        <a href='/'>Contact Us</a>
                       </li>
                     </ul>
                   </div>
@@ -123,24 +123,24 @@ class Footer extends Component {
                   <div className='footer-col-3'>
                     <ul className='space_list' style={{ marginTop: '20px' }}>
                       <li>
-                        <a href='#'>
+                        <a href='/'>
                           <h2 className='font-weight-bold'>Quick Links</h2>
                         </a>
                       </li>
                       <li>
-                        <a href='#'>Partnership </a>
+                        <a href='/'>Partnership </a>
                       </li>
                       <li>
-                        <a href='#'>inquires</a>
+                        <a href='/'>inquires</a>
                       </li>
                       <li>
-                        <a href='#'>Client Portal</a>
+                        <a href='/'>Client Portal</a>
                       </li>
                       <li>
-                        <a href='#'>Privacy Policy</a>
+                        <a href='/'>Privacy Policy</a>
                       </li>
                       <li>
-                        <a href='#'>Terms & Condition</a>
+                        <a href='/'>Terms & Condition</a>
                       </li>
                     </ul>
                   </div>

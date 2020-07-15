@@ -1,95 +1,21 @@
 import React from 'react';
-import { Card, CardGroup } from 'react-bootstrap';
-import img from '../../assets/img/Uber_App_Icon.svg.svg';
+import img from '../../assets/img/circle.png';
 
 export const Tech = () => {
   return (
     <div className='container'>
-      <h1 style={{ textAlign: 'center' }}>TECHNOLOGY & BUSINESS</h1>
-      <h2 style={{ textAlign: 'center' }}>PARTNERS AROUND THE WORLD</h2>
+      <h1
+        style={{ textAlign: 'center', fontWeight: 'bolder', fontSize: '50px', margin: '.67em 0' }}
+      >
+        <strong>TECHNOLOGY & BUSINESS</strong>
+      </h1>
+      <h2 style={{ textAlign: 'center' }}>
+        <strong>PARTNERS AROUND THE WORLD</strong>
+      </h2>
       <br />
-
-      <CardGroup>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </CardGroup>
-
-      <br />
-
-      <CardGroup>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <Card className='text-center'>
-          <Card.Img variant='top' src={img} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </CardGroup>
+      <div>
+        <img src={img} alt='img' />
+      </div>
     </div>
   );
 };

@@ -9,9 +9,8 @@ export const Solutions = () => {
       <div className='container-fluid'>
         <div className='row'>
           <div className='col-xl-5 col-lg-5 col-md-12 col-sm-12 animated fadeInUp delay-1s'>
-            <h3 className='expert'>
-              Discuss with our Experts & Choose the BEST SOLUTION FOR YOUR BUSINESS
-            </h3>
+            <h3 className='expert'>Discuss with our Experts & Choose the</h3>
+            <h3 style={{ color: '#0f71b7' }}>BEST SOLUTION FOR YOUR BUSINESS</h3>
           </div>
           <div className='col-xl-3 col-lg-2 col-md-5 col-sm-12 animated fadeInUp delay-2s'>
             <img className='mobileimg' src={img04} alt='img' />
