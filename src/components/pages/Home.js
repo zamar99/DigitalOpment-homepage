@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Audience from '../layout/Audience';
-import Experience from '../layout/Experience';
 import { Specialities } from '../layout/Specialities';
 import { Solutions } from '../layout/Solutions';
 import { Sec3 } from '../layout/Sec3';
@@ -13,6 +12,7 @@ import { Locations } from '../layout/Locations';
 import { Spring } from 'react-spring/renderprops';
 import { ProgressBar } from '../layout/ProgressBar';
 import vid from '../../assets/video/Introducing Digitalopment The leading Digital Marketing Agency.mp4';
+import { SocialMedia } from '../socialMedia/SocialMedia';
 
 export default function Home() {
   return (
@@ -31,16 +31,7 @@ export default function Home() {
       >
         <source src={vid} type='video/mp4' />
       </video>
-      <br />
-      <br />
       <Audience />
-      <br />
-      <br />
-      <hr />
-      <Experience />
-      <br />
-      <br />
-      <hr />
       <Specialities />
       <br />
       <br />
@@ -48,7 +39,6 @@ export default function Home() {
       <br />
       <hr />
       <Sec3 />
-      <hr />
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 1000, duration: 1000 }}>
         {(props) => (
           <div style={props}>
@@ -112,8 +102,8 @@ export default function Home() {
           </div>
         )}
       </Spring>
-
-      <hr />
+      <br />
+      <SocialMedia />
     </Fragment>
   );
 }

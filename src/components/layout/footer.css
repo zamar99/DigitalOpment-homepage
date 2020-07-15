@@ -9,3 +9,68 @@ ul.space_list li a {
   letter-spacing: 1px;
   line-height: 30px;
 }
+
+.subscribe-wrapper {
+  overflow: hidden;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.subscribe-form {
+}
+
+.subscribe2-wrapper .subscribe-form input {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  height: 45px;
+  margin-right: 0px;
+  padding-left: 32px;
+  width: 70%;
+  cursor: pointer;
+}
+
+.subscribe2-wrapper .subscribe-form button {
+  background: #ffff;
+  border: none;
+  border-radius: 5px;
+  color: #4b5d73;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 14px 65px;
+  transition: all 0.3s ease 0s;
+}
+
+.subscribe2-wrapper .subscribe-form button i {
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.reveal {
+  background-color: #000;
+  border: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  color: #525153;
+  font-size: 12px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.reveal:hover {
+  transition: 1s;
+  background-color: #000;
+  color: #000;
+  text-decoration: none;
+}

@@ -21,19 +21,7 @@ class Footer extends Component {
     return (
       <div>
         <div style={{ textAlign: 'center' }}>
-          <button
-            style={{
-              width: '100%',
-              backgroundColor: 'black',
-              color: '#525153',
-              backgroundRepeat: 'no-repeat',
-              border: 'none',
-              cursor: 'pointer',
-              overflow: 'hidden',
-              outline: 'none',
-            }}
-            onClick={this.toggle}
-          >
+          <button className='reveal' onClick={this.toggle}>
             {height === 0 ? 'Show Site index ' : 'Hide Site index '}
             <i class='fa fa-arrow-down' aria-hidden='true' />
           </button>
@@ -51,7 +39,10 @@ class Footer extends Component {
               <div className='row'>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                   <div className='footer-col-1'>
-                    <ul className='space_list' style={{ marginTop: '20px' }}>
+                    <ul
+                      className='space_list'
+                      style={{ paddingTop: '50px', listStyleType: 'none' }}
+                    >
                       <li>
                         <a href='/'>
                           <h2 className='font-weight-bold'>Services</h2>
@@ -98,7 +89,10 @@ class Footer extends Component {
                 </div>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                   <div className='footer-col-2'>
-                    <ul className='space_list' style={{ marginTop: '20px' }}>
+                    <ul
+                      className='space_list'
+                      style={{ paddingTop: '50px', listStyleType: 'none' }}
+                    >
                       <li>
                         <a href='/'>
                           <h2 className='font-weight-bold'>Home</h2>
@@ -121,7 +115,10 @@ class Footer extends Component {
                 </div>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                   <div className='footer-col-3'>
-                    <ul className='space_list' style={{ marginTop: '20px' }}>
+                    <ul
+                      className='space_list'
+                      style={{ paddingTop: '50px', listStyleType: 'none' }}
+                    >
                       <li>
                         <a href='/'>
                           <h2 className='font-weight-bold'>Quick Links</h2>
@@ -147,7 +144,7 @@ class Footer extends Component {
                 </div>
                 <div className='col-lg-3 col-md-12 col-sm-12'>
                   <div className='footer-col-3 pt-4'>
-                    <div className='subscribe-text'>
+                    <div className='subscribe-text' style={{ marginTop: '55px' }}>
                       <span>JOIN OUR NEWSLETTER</span>
                       <h2 className='pb-3'>subscribe newsletter</h2>
                     </div>

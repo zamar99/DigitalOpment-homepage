@@ -478,7 +478,7 @@ export const About = () => {
               <h3 className='card-title text-white text-center'>
                 <div
                   className='d-flex flex-wrap justify-content-center mt-2'
-                  style={{ fontWeight: 'bolder' }}
+                  style={{ fontWeight: 'bold' }}
                 >
                   <Clock format={'HH:mm:ss'} ticking={true} timezone={'Asia/Karachi'} />
                 </div>
