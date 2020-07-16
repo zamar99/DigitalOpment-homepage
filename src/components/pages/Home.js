@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Audience from '../layout/Audience';
 import { Specialities } from '../layout/Specialities';
 import { Solutions } from '../layout/Solutions';
 import { Sec3 } from '../layout/Sec3';
@@ -13,6 +12,7 @@ import { Spring } from 'react-spring/renderprops';
 import { ProgressBar } from '../layout/ProgressBar';
 import vid from '../../assets/video/Introducing Digitalopment The leading Digital Marketing Agency.mp4';
 import { SocialMedia } from '../socialMedia/SocialMedia';
+import Audience from '../layout/Audience';
 
 export default function Home() {
   return (

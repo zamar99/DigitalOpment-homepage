@@ -105,7 +105,7 @@ export const About = () => {
                         <div className='col-lg-2'>
                           <div className='cardimga-three'>
                             <h5 className='ml18'>Relax</h5>
-                            <p className='ml19'>
+                            <p className='ml19' style={{ marginRight: '25px' }}>
                               We take your business as our own and give it just the makeover you
                               want for the digital world.
                             </p>
@@ -192,9 +192,17 @@ export const About = () => {
               <div className='col-lg-3 col-md-12 col-sm-12'>
                 <div className='tech-col-1'>&nbsp;</div>
               </div>
-              <div className='col-lg-3 col-md-12 col-sm-12'>
+              <div
+                className='col-lg-3 col-md-12 col-sm-12'
+                style={{
+                  marginTop: '60px',
+                  borderRight: 'solid',
+                  backgroundColor: '#0f71b7',
+                  height: '330px',
+                }}
+              >
                 <div className='tech-col-2'>
-                  <h3>
+                  <h3 style={{ color: 'white', paddingTop: '20px', padding: '10px' }}>
                     Enterprise Content
                     <br />
                     Management
@@ -219,9 +227,12 @@ export const About = () => {
                   </ul>
                 </div>
               </div>
-              <div className='col-lg-3 col-md-12 col-sm-12'>
+              <div
+                className='col-lg-3 col-md-12 col-sm-12'
+                style={{ marginTop: '60px', borderRight: 'solid' }}
+              >
                 <div className='tech-col-3'>
-                  <h3>
+                  <h3 style={{ color: 'white', paddingTop: '20px', padding: '10px' }}>
                     Web <br /> Technology
                   </h3>
                   <hr className='content-manag' />
@@ -244,9 +255,17 @@ export const About = () => {
                   </ul>
                 </div>
               </div>
-              <div className='col-lg-3 col-md-12 col-sm-12'>
+              <div
+                className='col-lg-3 col-md-12 col-sm-12'
+                style={{
+                  marginTop: '60px',
+                  borderRight: 'solid',
+                  backgroundColor: '#0f71b7',
+                  height: '330px',
+                }}
+              >
                 <div className='tech-col-4'>
-                  <h3>
+                  <h3 style={{ color: 'white', paddingTop: '20px', padding: '10px' }}>
                     Mobile <br /> Technology
                   </h3>
                   <hr className='content-manag' />
